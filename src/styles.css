@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+body {
+  background: #bdbdbd;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Basic Design */
+#calcContainer {
+  width: 50%;
+  height: auto;
+  box-shadow: 0.5em 0.5em 1.2em rgba(0, 0, 0, 0.2);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #ffffff;
+}
+
+/* 1st row */
+.result-clear {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+/* Display */
+.result-clear input[type="text"].result {
+  width: 70%;
+  height: 50px;
+  font-size: 1.2em;
+  display: block;
+  border: 0;
+  padding-top: 1%;
+  padding-left: 5%;
+}
+
+/* Input button */
+.grid-buttons {
+  margin: 0;
+  justify-content: space-between;
+  align-items: center;
+  background: #212121;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+input[type="button"] {
+  font-size: 1em;
+  font-weight: 500;
+  color: #ffffff;
+  background: #212121;
+  border: 2px solid #212121;
+  flex-grow: 1;
+  width: 22%;
+  height: 40px;
+  margin: 5px;
+  border: 0;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+input[type="button"].clear {
+  background: #009688;
+  border: 2px solid #009688;
+  width: 22%; /* Set AC button width to match the + button width */
+}
+
+.grid-buttons input[type="button"].math {
+  background: #757575;
+  border: 2px solid #757575;
+}
+
+/* Button hover effect */
+input[type="button"]:hover,
+input[type="button"].clear:hover,
+.grid-buttons input[type="button"].math:hover {
+  border: 2px solid #009688;
+  background: #009688;
+}
